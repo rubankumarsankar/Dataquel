@@ -1,0 +1,121 @@
+/* ============================= */
+/* DROPDOWN CONTAINER STYLING    */
+/* ============================= */
+.about-dropdown {
+  background-color: #01053a !important; /* Deep navy blue */
+  border-radius: 8px;
+  min-width: 100%;
+  white-space: nowrap; /* Prevent unwanted wrapping */
+  max-height: 400px;
+  overflow-y: auto;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #0f1b2d transparent;
+}
+.site_link img {
+  max-height: 40px; /* default for desktops */
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .site_link img {
+    max-height: 40px; /* slightly smaller on tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .site_link img {
+    max-height: 35px; /* even smaller on mobile */
+  }
+}
+
+/* WebKit scrollbar */
+.about-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+.about-dropdown::-webkit-scrollbar-thumb {
+  background-color: #0f1b2d;
+  border-radius: 4px;
+}
+.about-dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Section heading in dropdown */
+.about-dropdown h6 {
+  color: #ff6600; /* Orange headings */
+  font-weight: 700;
+}
+
+/* ============================= */
+/* CARD (HIGHLIGHT BOX)          */
+/* ============================= */
+/* Ensure all cards in a row are the same height */
+.row.align-items-stretch > [class*="col-"] {
+  display: flex; /* Make column a flex container */
+}
+
+.highlight-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start; /* Align icon with text */
+  gap: 8px;
+  flex: 1; /* Fill parent column height */
+  overflow: hidden;
+}
+
+
+.highlight-box:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Icon styling */
+.highlight-box .nav-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Make white */
+}
+
+/* ============================= */
+/* TEXT AREA INSIDE CARD         */
+/* ============================= */
+/* Make description text wrap properly inside the card */
+.highlight-box .flex-grow-1 {
+  min-width: 0; /* required for flex text truncation/wrapping */
+  word-wrap: break-word; /* break long words */
+  overflow-wrap: anywhere; /* allow breaks anywhere if needed */
+}
+
+.highlight-box .flex-grow-1 h6 {
+  font-weight: 600;
+  color: #ff6600;
+  margin-bottom: 6px;
+  white-space: normal; /* allow wrapping */
+}
+
+.highlight-box .flex-grow-1 p {
+  color: #ffffff !important;
+  font-size: 13px;
+  line-height: 1.4;
+  margin-bottom: 0;
+  white-space: normal; /* wrap description too */
+}
+
+
+/* ============================= */
+/* MEGA MENU LAYOUT              */
+/* ============================= */
+.mega-grid .category-block {
+  flex: 0 0 auto; /* Prevent shrinking */
+}
+
+.mega-grid .highlight-box {
+  width: 300px; /* Fixed width for alignment */
+}
+
+

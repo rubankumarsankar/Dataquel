@@ -1,0 +1,25 @@
+.centered {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* On small screens (mobile), remove extra padding */
+@media (max-width: 768px) {
+  .centered {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.feature-card {
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-5px);
+}
+
+.feature-card i {
+  color: #f97316; /* Orange icon color */
+}

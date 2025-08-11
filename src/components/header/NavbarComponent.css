@@ -1,0 +1,14 @@
+/* Navbar dropdown animation */
+.nav-animate .dropdown-menu {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease-in-out;
+  display: block !important; /* necessary to override default Bootstrap toggle behavior */
+  pointer-events: none;
+}
+
+.nav-animate.show .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: auto;
+}

@@ -1,0 +1,41 @@
+.why-section {
+  background-color: #fff;
+}
+
+.why-card {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  padding-top: 3.5rem !important;
+  border: 1px solid #000; /* black border */
+}
+
+
+
+/* WhyDataQuel.css */
+
+.why-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.why-card:hover {
+  border: none !important;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3) !important;
+   transform: scale(1.02);
+}
+
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 10;
+}

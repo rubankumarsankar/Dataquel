@@ -1,0 +1,55 @@
+/* 3.03 - Page Header, Page Banner, Breadcrumb - Start
+================================================== */
+.page_banner_section {
+	// z-index: 1;
+	position: relative;
+	// padding: 130px 0 110px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	// background-color: var(--bs-dark);
+	
+	// background-position: center center;
+	.heading_focus_text {
+		margin-bottom: 24px;
+	}
+}
+
+.page_title {
+  color: #020842;
+  font-size: 2.7rem;
+  font-weight: 800;
+  font-family: 'Axiforma Bold';
+}
+
+.page_sub_title {
+  color: #030e72;
+  font-size: 1.75rem;
+  font-weight: 600;
+  font-family: 'Axiforma Bold';
+}
+
+.page_cont {
+  color: #030e72;
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Axiforma Medium';
+}
+
+
+// .page_title {
+// 	font-size: 55px;
+// 	line-height: 70px;
+// }
+
+// .page_sub_title {
+// 	font-size: 40px;
+// 	line-height: 50px;
+// }
+// .page_cont {
+// 	font-size: 22px;
+// 	line-height: 30px;
+// }
+/* 3.03 - Page Header, Page Banner, Breadcrumb - End
+================================================== */

@@ -1,0 +1,141 @@
+.footer {
+  background-color: #fff;
+  padding: 50px 0 20px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  color: #333;
+  border-top: 1px solid #eee;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #f26522;
+  margin-bottom: 16px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #002060;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f26522;
+  text-decoration: underline;
+}
+
+.footer-top address {
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.footer-top .label {
+  font-weight: 600;
+  color: #f26522;
+}
+
+.footer-subscribe {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.subscribe-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f26522;
+}
+
+.subscribe-text {
+  margin-bottom: 0;
+  color: #333;
+}
+
+.subscribe-form {
+  background-color: #10175e;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.subscribe-input {
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  flex: 1;
+  color: #fff;
+  background-color: transparent;
+}
+
+.subscribe-input::placeholder {
+  color: #ccc;
+}
+
+.subscribe-btn {
+  background-color: #0057ff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: #0039a6;
+}
+
+.footer-bottom {
+  padding-top: 20px;
+}
+
+.copyright {
+  margin: 0;
+  color: #555;
+}
+
+.brand {
+  color: #f26522;
+  font-weight: 600;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+}
+
+.footer-social svg {
+  cursor: pointer;
+  color: #002060;
+  transition: color 0.3s ease;
+}
+
+.footer-social svg:hover {
+  color: #f26522;
+}
+
+.follow-text {
+  font-weight: 600;
+  color: #002060;
+}
+
+.divider {
+  width: 30px;
+  height: 2px;
+  background-color: #f26522;
+  display: inline-block;
+  margin: 0 10px;
+}
