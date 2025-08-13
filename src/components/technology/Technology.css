@@ -1,0 +1,127 @@
+
+.centered {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* On small screens (mobile), remove extra padding */
+@media (max-width: 768px) {
+  .centered {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+.security-risk-section {
+  background-color: #fff;
+}
+
+.security-box {
+  background-color: #f9fbfd;
+  border: 1px solid #e6eaf0;
+  transition: box-shadow 0.3s ease;
+}
+
+.security-box:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-orange {
+  background-color: #ff6600 !important;
+  border: none;
+  color: #fff;
+}
+
+.btn-orange:hover {
+  background-color: #e55b00 !important;
+}
+
+.feature-card {
+  border: 1px solid #e6eaf0;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.text-orange {
+  color: #ff6600;
+}
+
+.btns_group-1 {
+  display: flex;
+  justify-content: flex-start; /* Align left */
+  padding-bottom: 0;
+  margin-top: 1rem;
+}
+
+.btns_group-1 .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  padding: 2px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.btns_group-1 .custom-btn-orange {
+  border: 2px solid #ff6600;
+  color: #ff6600;
+  background: transparent;
+}
+
+.btns_group-1 .custom-btn-orange:hover {
+  background-color: #ff6600;
+  color: #fff;
+}
+
+.btns_group-1 .btn_icon i {
+  font-size: 0.9rem;
+}
+
+.why-section {
+  background-color: #fff;
+}
+
+.why-card {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  padding-top: 3.5rem !important;
+  border: 1px solid #000; /* black border */
+}
+
+
+
+/* WhyDataQuel.css */
+
+.why-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.why-card:hover {
+  border: none !important;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3) !important;
+   transform: scale(1.02);
+}
+
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 10;
+}

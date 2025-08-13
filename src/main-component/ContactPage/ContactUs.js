@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import "./contact.css";
 import { FiArrowRight } from "react-icons/fi";
+import MainNavbar from "../../components/header/MainHeader";
 
 const ContactUsPage = (props) => {
   const [isOpen, setOpen] = useState(false);
@@ -50,7 +51,7 @@ const ContactUsPage = (props) => {
   return (
     <Fragment>
       {/* <Header /> */}
-      <Navbar />
+      <MainNavbar />
       <main
         className=" bg-cover bg-center bg-no-repeat main-rounded"
         style={{

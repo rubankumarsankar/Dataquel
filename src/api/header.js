@@ -43,31 +43,31 @@ export const Technology=[
         "title": "Audit & Assurance",
         "desc": "Leverage best-in-class technology to quickly assess risks, audit ...",
         "iconImg": icon1,
-        "link": "#"
+        "link": "/technology-consulting/audit-assurance"
       },
       {
         "title": "Governance Risk & Compliance",
         "desc": "Combat risks and maintain top-notch regulatory compliance with ...",
         "iconImg": icon2,
-        "link": "#"
+        "link": "/technology-consulting/governance-compliance"
       },
       {
         "title": "Penetration Testing Services",
         "desc": "Proactively defend your operation’s digital assets with specialized ...",
         "iconImg": icon3,
-        "link": "#"
+        "link": "/technology-consulting/penetration-testing"
       },
       {
         "title": "Identity Access Management",
         "desc": "Upgrade your access management systems with tech-driven ...",
         "iconImg": icon4,
-        "link": "#"
+        "link": "/technology-consulting/identity-access"
       },
       {
         "title": "Virtual CISO Services & Cybersecurity Strategy",
         "desc": "Whether you need occasional insight or a full-time support ...",
         "iconImg": icon5,
-        "link": "#"
+        "link": "/technology-consulting/virtual-ciso-services"
       }
     ]
   },
@@ -236,7 +236,7 @@ export const Certifications = [
         title: "ISO 9001",
         desc: "ISO 9001 is a robust set of practices that ensure high-quality products ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/iso-9001",
       },
       {
         title: "ISO 13485:2015 MD",
@@ -253,7 +253,7 @@ export const Certifications = [
         title: "ISO 14001:2015 EMS",
         desc: "The demand for environmentally conscious operations has never ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/iso-140012015-ems",
       },
     ],
   },

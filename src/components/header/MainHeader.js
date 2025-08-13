@@ -1,7 +1,7 @@
 import React from "react";
+import { useLocation, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FiArrowRight } from "react-icons/fi";
-import { Link } from "react-router-dom";
 import "./customNav.css";
 
 import logo from "../../images/site_logo/logo.webp";
@@ -14,9 +14,17 @@ import {
 } from "../../api/header";
 
 export default function MainNavbar() {
-  const ClickHandler = () => {
-    window.scrollTo(10, 0);
-  };
+  const location = useLocation();
+
+  const isActive = (path) => location.pathname.startsWith(path);
+
+  const navItems = [
+    { name: "Technology Consulting", link: "/technology", data: Technology },
+    { name: "Tech Platforms", link: "/tech-platforms", data: Platforms },
+    { name: "Certifications", link: "/certifications", data: Certifications },
+    { name: "Industries", link: "/industries", data: Industries },
+    { name: "About Us", link: "/about-us", data: About },
+  ];
 
   const renderMenu = (data) => (
     <div className="dropdown-menu about-dropdown shadow-lg border-0 p-4 mega-grid">
@@ -24,17 +32,20 @@ export default function MainNavbar() {
         {data.map((category, catIdx) => (
           <div className="category-block w-100" key={catIdx}>
             <h6 className="fw-bold text-warning mb-3">{category.subHeading}</h6>
-
-            {/* Bootstrap row for 4 cards per row */}
             <div className="row g-3">
               {category.items.map((item, idx) => (
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={idx}>
                   <Link
                     to={item.link}
-                    className="text-decoration-none text-white"
+                    className={`text-decoration-none text-white ${
+                      isActive(item.link) ? "active-nav" : ""
+                    }`}
                   >
-                    <div className="p-4 rounded highlight-box h-100 d-flex align-items-stretch gap-2">
-                      {/* Left Column - Icon */}
+                    <div
+                      className={`p-4 rounded highlight-box h-100 d-flex align-items-stretch gap-2 ${
+                        isActive(item.link) ? "active-card-bg" : ""
+                      }`}
+                    >
                       <div className="flex-shrink-0">
                         <img
                           src={item.iconImg}
@@ -43,8 +54,6 @@ export default function MainNavbar() {
                           style={{ width: 40, height: 40 }}
                         />
                       </div>
-
-                      {/* Right Column - Text */}
                       <div className="flex-grow-1">
                         <h6 className="text-warning mb-1">{item.title}</h6>
                         <p className="mb-0 small">{item.desc}</p>
@@ -60,13 +69,85 @@ export default function MainNavbar() {
     </div>
   );
 
+  const DesktopNav = () => (
+    <div className="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul className="navbar-nav ms-auto align-items-lg-center">
+        {navItems.map((nav, idx) => (
+          <li className="nav-item dropdown position-static" key={idx}>
+            <Link
+              className={`nav-link dropdown-toggle ${
+                isActive(nav.link) ? "active-nav" : ""
+              }`}
+              to={nav.link}
+              data-bs-toggle="dropdown"
+            >
+              {nav.name}
+            </Link>
+            {renderMenu(nav.data)}
+          </li>
+        ))}
+        <li className="nav-item ms-lg-3">
+          <Link
+            className={`btn btn-outline-light ${
+              isActive("/contact-us") ? "active-nav" : ""
+            }`}
+            to="/contact-us"
+          >
+            <span className="btn_label" data-text="Contact Us">
+              Contact Us
+            </span>
+            <span className="btn_icon">
+              <i className="fa-solid fa-arrow-up-right"></i>
+            </span>
+          </Link>
+        </li>
+      </ul>
+    </div>
+  );
+
+  const MobileNav = () => (
+    <div
+      className="collapse navbar-collapse mobile-slide-nav"
+      id="navbarNavDropdown"
+    >
+      <div className="mobile-nav-header d-flex justify-content-between align-items-center">
+        <Link className="site_link" to="/">
+          <img src={logo} alt="Site Logo" />
+        </Link>
+        <button
+          className="btn-close-mobile"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+        >
+          ✕
+        </button>
+      </div>
+      <ul className="navbar-nav mt-3">
+        {navItems.map((nav, idx) => (
+          <li className="nav-item dropdown" key={idx}>
+            <Link
+              className={`nav-link dropdown-toggle ${
+                isActive(nav.link) ? "active-nav" : ""
+              }`}
+              to={nav.link}
+              data-bs-toggle="dropdown"
+            >
+              {nav.name}
+            </Link>
+            {renderMenu(nav.data)}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+
   return (
     <nav className="navbar navbar-expand-lg bg-white shadow-sm py-2">
       <div className="container">
         <Link className="site_link" to="/">
           <img src={logo} alt="Site Logo" />
         </Link>
-
         <button
           className="navbar-toggler"
           type="button"
@@ -76,74 +157,14 @@ export default function MainNavbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav ms-auto align-items-lg-center">
-            <li className="nav-item dropdown position-static">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="#"
-                data-bs-toggle="dropdown"
-              >
-                Technology
-              </Link>
-              {renderMenu(Technology)}
-            </li>
+        {/* Desktop Nav */}
+        <div className="d-none d-lg-block">
+          <DesktopNav />
+        </div>
 
-            <li className="nav-item dropdown position-static">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="#"
-                data-bs-toggle="dropdown"
-              >
-                Platforms
-              </Link>
-              {renderMenu(Platforms)}
-            </li>
-
-            <li className="nav-item dropdown position-static">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="#"
-                data-bs-toggle="dropdown"
-              >
-                Certifications
-              </Link>
-              {renderMenu(Certifications)}
-            </li>
-
-            <li className="nav-item dropdown position-static">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="#"
-                data-bs-toggle="dropdown"
-              >
-                Industries
-              </Link>
-              {renderMenu(Industries)}
-            </li>
-
-            <li className="nav-item dropdown position-static">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="/about-us"
-                data-bs-toggle="dropdown"
-              >
-                About
-              </Link>
-              {renderMenu(About)}
-            </li>
-
-            <li className="nav-item ms-lg-3">
-              <Link className="btn btn-outline-light" to="/contact-us">
-                <span className="btn_label" data-text="Contact Us">
-                  Contact Us
-                </span>
-                <span className="btn_icon">
-                  <i className="fa-solid fa-arrow-up-right"></i>
-                </span>
-              </Link>
-            </li>
-          </ul>
+        {/* Mobile Nav */}
+        <div className="d-lg-none w-100">
+          <MobileNav />
         </div>
       </div>
     </nav>

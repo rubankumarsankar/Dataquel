@@ -25,6 +25,13 @@ import MicrosoftPage from '../TechPlatforms/microsoft';
 import GooglePage from '../TechPlatforms/googleCloud';
 import AWSPage from '../TechPlatforms/AWS';
 import ContactUsPage from '../ContactPage/ContactUs';
+import AuditPage from '../../components/technology/Cyber Security/audit';
+import GovernancePage from '../../components/technology/Cyber Security/governance';
+import PenetrationPage from '../../components/technology/Cyber Security/Penetration';
+import VirtualCISOPage from '../../components/technology/Cyber Security/VirtualCISO';
+import IdentityPage from '../../components/technology/Cyber Security/Identity';
+import ISO9001Page from '../../components/certifications/Quality Management Systems/ISO9001';
+import EMSPage from '../../components/certifications/EMS';
 
 const AllRoute = () => {
 
@@ -36,6 +43,11 @@ const AllRoute = () => {
           <Route path="home" element={<Homepage />} />
           {/* <Route path="home_software_company" element={<HomePage2 />} />
           <Route path="home_business_consulting" element={<HomePage3 />} /> */}
+          <Route path="technology-consulting/audit-assurance" element={<AuditPage />} />
+          <Route path="technology-consulting/governance-compliance" element={<GovernancePage />} />
+          <Route path="technology-consulting/penetration-testing" element={<PenetrationPage />} />
+          <Route path="technology-consulting/identity-access" element={<IdentityPage />} />
+          <Route path="technology-consulting/virtual-ciso-services" element={<VirtualCISOPage />} />
           <Route path="about-us" element={<AboutUsPage />} />
           <Route path="about-us/partners" element={<PartnersPage />} />
           <Route path="about-us/locations" element={<LocationsPage />} />
@@ -43,6 +55,8 @@ const AllRoute = () => {
           <Route path="industries/health" element={<HealthPage />} />
           <Route path="industries/retail" element={<RetailPage />} />
           <Route path="industries/manufacturing" element={<ManufacturingPage />} />
+          <Route path="certifications/iso-9001" element={<ISO9001Page />} />
+          <Route path="certifications/iso-140012015-ems" element={<EMSPage />} />
           <Route path="tech-platforms/microsoft" element={<MicrosoftPage />} />
           <Route path="tech-platforms/google-cloud" element={<GooglePage />} />
           <Route path="tech-platforms/aws" element={<AWSPage />} />

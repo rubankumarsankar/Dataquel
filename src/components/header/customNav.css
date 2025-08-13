@@ -17,6 +17,23 @@
   height: auto;
 }
 
+/* Sticky Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Keeps it above other elements */
+}
+
+/* Optional: If you want a fixed navbar instead */
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
 @media (max-width: 768px) {
   .site_link img {
     max-height: 40px; /* slightly smaller on tablets */
@@ -43,7 +60,7 @@
 
 /* Section heading in dropdown */
 .about-dropdown h6 {
-  color: #ff6600; /* Orange headings */
+  color: #F3A338; /* Orange headings */
   font-weight: 700;
 }
 
@@ -93,7 +110,7 @@
 
 .highlight-box .flex-grow-1 h6 {
   font-weight: 600;
-  color: #ff6600;
+  color: #F3A338;
   margin-bottom: 6px;
   white-space: normal; /* allow wrapping */
 }
@@ -118,4 +135,81 @@
   width: 300px; /* Fixed width for alignment */
 }
 
+/* Active Navbar Link */
+.active-nav {
+  color: #F3A338 !important; /* Yellow highlight */
+  font-weight: 800;
+  /* border-bottom: 2px solid #F3A338; */
+}
 
+/* Active Card Background */
+.active-card-bg {
+  background-color: rgba(255, 193, 7, 0.15) !important; /* Soft yellow background */
+  border: 1px solid #F3A338;
+  transition: all 0.3s ease;
+}
+
+/* Active Card Text */
+.active-card h6,
+.active-card p {
+  color: #F3A338 !important;
+}
+
+/* Hover effect for nav links */
+.navbar-nav .nav-link:hover {
+  color: #F3A338 !important;
+}
+
+/* Mobile Nav Drawer */
+@media (max-width: 991px) {
+  .mobile-slide-nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 90%;
+    background: #fff;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.15);
+    padding: 1.5rem;
+    transition: left 0.4s ease-in-out;
+    z-index: 1050;
+    overflow-y: auto;
+  }
+
+  /* When Bootstrap's .show is applied */
+  .mobile-slide-nav.show {
+    left: 0;
+  }
+
+  /* Mobile nav header (logo + close button) */
+  .mobile-nav-header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+  }
+
+  .btn-close-mobile {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: red;
+    cursor: pointer;
+  }
+
+  /* Mobile Nav Links */
+  .mobile-slide-nav .nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #f2f2f2;
+    color: #000 !important;
+  }
+
+  /* Active link highlight */
+  .mobile-slide-nav .active-nav {
+    font-weight: bold;
+    color: #ffb400 !important;
+  }
+}

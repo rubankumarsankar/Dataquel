@@ -1,0 +1,72 @@
+/* Form wrapper centering */
+.contact-form-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* Card look for form */
+.form-box {
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease-in-out;
+}
+
+.form-box:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+  transform: translateY(-4px);
+}
+
+/* Input group */
+.input-group-text {
+  background-color: #fff;
+  border-right: none;
+  font-size: 1rem;
+}
+
+.form-control {
+  border-left: none;
+  box-shadow: none !important;
+  padding: 10px;
+}
+
+textarea.form-control {
+  border-left: none;
+}
+
+/* Custom button styling */
+.custom-btn-orange {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 12px 35px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+.custom-btn-orange .btn_icon {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.custom-btn-orange:hover {
+  background-color: #e65c00;
+  box-shadow: 0 8px 20px rgba(255, 102, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.custom-btn-orange:hover .btn_icon {
+  transform: translateX(4px);
+}
+
+/* Error text */
+small.text-danger {
+  display: block;
+  margin-top: 4px;
+}
