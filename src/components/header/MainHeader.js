@@ -1,9 +1,7 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FiArrowRight } from "react-icons/fi";
 import "./customNav.css";
-
 import logo from "../../images/site_logo/logo.webp";
 import {
   Technology,

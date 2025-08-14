@@ -1,0 +1,9 @@
+# Serve SPA index.html for all routes (except existing files/folders)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  RewriteRule . /index.html [L]
+</IfModule>

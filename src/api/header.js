@@ -78,49 +78,49 @@ export const Technology=[
         "title": "CIO Mentoring / Interim CIO",
         "desc": "Elevate your IT strategy with expert insight and guidance from an ...",
         "iconImg": icon6,
-        "link": "#"
+        "link": "/technology-consulting/cio-mentoring"
       },
       {
         "title": "CIO Services",
         "desc": "Elevate your IT strategy with expert insight and guidance from an ...",
         "iconImg": icon7,
-        "link": "#"
+        "link": "/technology-consulting/cio-services"
       },
       {
         "title": "Cybersecurity",
         "desc": "Some text goes here related to Microsoft...",
         "iconImg": icon8,
-        "link": "#"
+        "link": "/technology-consulting/it"
       },
       {
         "title": "IT Strategy Development",
         "desc": "Enlist the expert insight of our technology consulting ...",
         "iconImg": icon9,
-        "link": "#"
+        "link": "/technology-consulting/it-strategy"
       },
       {
         "title": "Enterprise Architecture",
         "desc": "Hit your growth goals and effortlessly scale your operation ...",
         "iconImg": icon10,
-        "link": "#"
+        "link": "/technology-consulting/enterprise-architecture"
       },
       {
         "title": "Outsourcing IT Services",
         "desc": "Fill the gaps in your IT staff with reliable, qualified virtual teams ...",
         "iconImg": icon11,
-        "link": "#"
+        "link": "/technology-consulting/outsourcing-it-services"
       },
       {
         "title": "Managed Services",
         "desc": "Take the stress off your in-house IT team with expertly managed IT ...",
         "iconImg": icon12,
-        "link": "#"
+        "link": "/technology-consulting/managed-services"
       },
       {
         "title": "IT Implementation Planning",
         "desc": "Streamline your IT implementation strategies with the help of an ...",
         "iconImg": icon13,
-        "link": "#"
+        "link": "/technology-consulting/it-implementation"
       }
     ]
   },
@@ -131,37 +131,37 @@ export const Technology=[
         "title": "Cloud Solutions",
         "desc": "Create seamless software delivery processes with secure ...",
         "iconImg": icon14,
-        "link": "#"
+        "link": "/technology-consulting/cloud-solutions"
       },
       {
         "title": "Custom Application Development",
         "desc": "From optimizing your operations to providing more value to ...",
         "iconImg": icon15,
-        "link": "#"
+        "link": "/technology-consulting/custom-application-development"
       },
       {
         "title": "DevOps",
         "desc": "Produce more high-quality work for your customers with DataQuel’s ...",
         "iconImg": icon16,
-        "link": "#"
+        "link": "/technology-consulting/devops"
       },
       {
         "title": "Software Quality Assurance & Testing",
         "desc": "Get your software products ready to launch with expert quality and ...",
         "iconImg": icon17,
-        "link": "#"
+        "link": "/technology-consulting/software-quality-assurance-testing"
       },
       {
         "title": "Website Development (WordPress)",
         "desc": "Take the hassle out of building and maintaining a high-performing ...",
         "iconImg": icon18,
-        "link": "#"
+        "link": "/technology-consulting/website-development-wordpress"
       },
       {
         "title": "SEO & Digital Marketing",
         "desc": "Take your marketing strategies to the next level with expert ...",
         "iconImg": icon19,
-        "link": "#"
+        "link": "/technology-consulting/seo-digital-marketing"
       }
     ]
   },
@@ -172,31 +172,31 @@ export const Technology=[
         "title": "Microsoft Adoption and Change Management",
         "desc": "Seamlessly elevate your operations with expertly executed Microsoft ...",
         "iconImg": icon20,
-        "link": "#"
+        "link": "/technology-consulting/microsoft-adoption"
       },
       {
         "title": "Microsoft Teams",
         "desc": "Take your team’s productivity to new heights with Microsoft ...",
         "iconImg": icon21,
-        "link": "#"
+        "link": "/technology-consulting/microsoft-teams"
       },
       {
         "title": "Microsoft 365 Managed Services",
         "desc": "Maximize your Microsoft 365 investment with expert support ...",
         "iconImg": icon22,
-        "link": "#"
+        "link": "/technology-consulting/microsoft-365-managed"
       },
       {
         "title": "Microsoft 365 Migration Services",
         "desc": "Streamline the move to Microsoft 365 with hands-on support ...",
         "iconImg": icon23,
-        "link": "#"
+        "link": "/technology-consulting/microsoft-365-migration"
       },
       {
         "title": "Microsoft & Office 365 Security and Compliance",
         "desc": "Protect your organization’s digital assets with automated solutions ...",
         "iconImg": icon24,
-        "link": "#"
+        "link": "/technology-consulting/microsoft-office-365"
       }
     ]
   }
@@ -242,7 +242,7 @@ export const Certifications = [
         title: "ISO 13485:2015 MD",
         desc: "As a measure of quality assurance, ISO 13485 is a globally ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/iso-134852015-md",
       },
     ],
   },
@@ -264,7 +264,7 @@ export const Certifications = [
         title: "ISO 45001:2018 OHSMS",
         desc: "When it comes to taking care of your employees, safe work ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/iso-450012018-ohsms",
       },
     ],
   },
@@ -275,7 +275,7 @@ export const Certifications = [
         title: "ISO 26001:2019",
         desc: "Businesses are no longer defined by their profits but by their values. In ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/iso-260012019",
       },
     ],
   },
@@ -286,25 +286,25 @@ export const Certifications = [
         title: "ISO 22000:2018 – FSMS",
         desc: "Food and beverage retailers face some of the most rigorous quality ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/iso-220002018-fsms",
       },
       {
         title: "Food Safety Certification 22000",
         desc: "As the industry’s most comprehensive certification ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/food-safety-certification-22000",
       },
       {
         title: "HACCP",
         desc: "For food and beverage producers, ISO 22000 FSMS certification is ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/haccp",
       },
       {
         title: "HALAL",
         desc: "When you’re ready to diversify your food and beverage certifications ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/halal",
       },
     ],
   },
@@ -315,13 +315,13 @@ export const Certifications = [
         title: "ISO 20121:2012",
         desc: "Profitable events start with sustainable solutions. At ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/iso-201212012",
       },
       {
         title: "ISO 50001:2018",
         desc: "Energy consumption is one of the biggest issues businesses face in ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/iso-500012018",
       },
     ],
   },
@@ -332,85 +332,85 @@ export const Certifications = [
         title: "ISO 27001:2022 - ISMS",
         desc: "Protecting your financial and technician assets is crucial to ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/",
       },
       {
         title: "ISO 22301:2019 - Business Continuity",
         desc: "In today’s ever-evolving marketplace, the possibility of ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/",
       },
       {
         title: "ISO 27701:2019 - Privacy Information",
         desc: "Protecting the privacy of your consumers is of the utmost ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/",
       },
       {
         title: "ISO 27018:2019 - PII Protection",
         desc: "Today, data breaches pose a significant risk for consumers and ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/",
       },
       {
         title: "ISO 27017:2015 - Cloud Security",
         desc: "Cloud service providers face some of today’s most complex security ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/",
       },
       {
         title: "ISO 27019:2019 - Energy Utility Security",
         desc: "In the energy sector, implementing reliable security controls can be ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/",
       },
       {
         title: "ISO 20000-1:2018 - ITSM",
         desc: "Robust IT strategies start with a solid Information Technology ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/",
       },
       {
         title: "Cloud Security Alliance (CSA)",
         desc: "Consumers choose cloud service providers based on their ability to ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/",
       },
       {
         title: "Capability Maturity Model Integration (CMMI)",
         desc: "When you’re ready to unlock your operation’s full potential, ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/",
       },
       {
         title: "PCI DSS",
         desc: "PCI DSS, or Payment Card Industry Data Security Standard ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/",
       },
       {
         title: "SOC TYPE2",
         desc: "Improving your cybersecurity starts with having a clear framework for ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/",
       },
       {
         title: "TISAX",
         desc: "For automotive companies, industry standards have continued to ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/",
       },
       {
         title: "GDPR",
         desc: "For brands looking to distribute in the European marketplace, GDPR ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/",
       },
       {
         title: "HIPPA",
         desc: "Few industries face as many privacy concerns as the healthcare ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/",
       },
     ],
   },
@@ -421,30 +421,25 @@ export const Certifications = [
         title: "ISO 18295-1:2017",
         desc: "Customer relationships are the very heart of your operation. At ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/iso-18295-12017",
       },
-    ],
-  },
-  {
-    subHeading: "Ethical & Textile Standards",
-    items: [
       {
         title: "SEDEX",
         desc: "For CPG operations, maintaining a sustainable and ethical supply ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/sedex",
       },
       {
         title: "BSCI",
         desc: "Corporate ethics are the one thing that can set your business apart ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/bsci",
       },
       {
         title: "OEKO-TEX",
         desc: "If your business offers textile-based goods, achieving OEKO-TEX ...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/oeko-tex",
       },
     ],
   },
@@ -455,13 +450,13 @@ export const Certifications = [
         title: "Advisory and Certification Service",
         desc: "Some text goes here related to Microsoft...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/",
       },
       {
         title: "USA, UK, GCC, UAE",
         desc: "Some text goes here related to Google Cloud...",
         iconImg: cert1,
-        link: "#",
+        link: "/certifications/",
       },
     ],
   },

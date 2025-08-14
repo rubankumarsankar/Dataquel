@@ -1,20 +1,14 @@
-import React, { Fragment, useState } from "react";
-import PageTitle from "../../pagetitle/PageTitle";
+import React, { Fragment } from "react";
 import Scrollbar from "../../scrollbar/scrollbar";
 import Footer from "../../footer/Footer";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
-// import "../Technolo  gy.css";
-import { FiArrowRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import MainNavbar from "../../header/MainHeader";
 import PagesTitleNew from "../../pagetitle/PagesTitleNew";
-import sIcon4 from "../../../images/icons-new/05.png";
-import sIcon5 from "../../../images/icons-new/04.png";
 import ContactForm from "../ContactForm";
 
 const ISO9001Page = (props) => {
-  const [isOpen, setOpen] = useState(false);
   return (
     <Fragment>
       {/* <Header /> */}

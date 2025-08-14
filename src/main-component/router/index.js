@@ -1,20 +1,20 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import Homepage from '../HomePage/HomePage'
-import HomePage2 from '../HomePage2/HomePage2';
-import HomePage3 from '../HomePage3/HomePage3';
+// import HomePage2 from '../HomePage2/HomePage2';
+// import HomePage3 from '../HomePage3/HomePage3';
 import AboutUsPage from '../AboutUsPage/AboutUsPage';
-import PricingPage from '../PricingPage/PricingPage';
-import PortfolioPage from '../PortfolioPage/PortfolioPage';
-import PortfolioSinglePage from '../PortfolioSinglePage/PortfolioSinglePage';
-import TeamPage from '../TeamPage/TeamPage';
-import TeamSinglePage from '../TeamSinglePage/TeamSinglePage';
-import ServicePage from '../ServicePage/ServicePage';
-import ServiceSinglePage from '../ServiceSinglePage/ServiceSinglePage';
-import BlogPage from '../BlogPage/BlogPage';
-import BlogDetails from '../BlogDetails/BlogDetails';
-import ContactPage from '../ContactPage/ContactPage';
-import PartnerSection from '../../components/business-consulting-components/PartnerSection/PartnerSection';
+// import PricingPage from '../PricingPage/PricingPage';
+// import PortfolioPage from '../PortfolioPage/PortfolioPage';
+// import PortfolioSinglePage from '../PortfolioSinglePage/PortfolioSinglePage';
+// import TeamPage from '../TeamPage/TeamPage';
+// import TeamSinglePage from '../TeamSinglePage/TeamSinglePage';
+// import ServicePage from '../ServicePage/ServicePage';
+// import ServiceSinglePage from '../ServiceSinglePage/ServiceSinglePage';
+// import BlogPage from '../BlogPage/BlogPage';
+// import BlogDetails from '../BlogDetails/BlogDetails';
+// import ContactPage from '../ContactPage/ContactPage';
+// import PartnerSection from '../../components/business-consulting-components/PartnerSection/PartnerSection';
 import PartnersPage from '../AboutUsPage/partners';
 import LocationsPage from '../AboutUsPage/Location';
 import FinancialPage from '../industriesPages/financial';
@@ -32,6 +32,38 @@ import VirtualCISOPage from '../../components/technology/Cyber Security/VirtualC
 import IdentityPage from '../../components/technology/Cyber Security/Identity';
 import ISO9001Page from '../../components/certifications/Quality Management Systems/ISO9001';
 import EMSPage from '../../components/certifications/EMS';
+import CIOMentoringPage from '../../components/technology/IT Strategy/CIOMentoring';
+import NotFound from '../../components/NotFound';
+import CIOServicesPage from '../../components/technology/IT Strategy/CIOServicesPage';
+import ITStrategyPage from '../../components/technology/IT Strategy/ITStrategyPage';
+import EnterprisePage from '../../components/technology/IT Strategy/EnterprisePage';
+import OutsourcingITServicesPage from '../../components/technology/IT Strategy/OutsourcingITServicesPage';
+import ManagedServicesPage from '../../components/technology/IT Strategy/ManagedServicesPage';
+import ITImplementationPage from '../../components/technology/IT Strategy/ITImplementationPage';
+import MicrosoftOfficePage from '../../components/technology/Modern Workplace/MicrosoftOfficePage';
+import Microsoft365MigrationPage from '../../components/technology/Modern Workplace/Microsoft365MigrationPage';
+import Microsoft365Page from '../../components/technology/Modern Workplace/Microsoft365Page';
+import MicrosoftTeamsPage from '../../components/technology/Modern Workplace/MicrosoftTeamsPage';
+import MicrosoftAdoptionPage from '../../components/technology/Modern Workplace/MicrosoftAdoptionPage';
+import DigitalMarketingPage from '../../components/technology/Modern Software Delivery/DigitalMarketingPage';
+import WebsiteDevelopmentPage from '../../components/technology/Modern Software Delivery/WebsiteDevelopmentPage';
+import SoftwareQualityPage from '../../components/technology/Modern Software Delivery/SoftwareQualityPage';
+import DevOpsPage from '../../components/technology/Modern Software Delivery/DevOpsPage';
+import CustomApplicationDevelopmentPage from '../../components/technology/Modern Software Delivery/CustomApplicationDevelopmentPage';
+import CloudSolutionsPage from '../../components/technology/Modern Software Delivery/CloudSolutionsPage';
+import ISO134852015MDPage from '../../components/certifications/Quality Management Systems/ISO134852015MDPage';
+import OHSMSPage from '../../components/certifications/OHSMSPage';
+import ISO201212012Page from '../../components/certifications/ISO201212012Page';
+import ISO260012019Page from '../../components/certifications/ISO260012019Page';
+import ISO500012018Page from '../../components/certifications/ISO500012018Page';
+import FSMSPage from '../../components/certifications/Food Safety Management System/FSMSPage';
+import Food22000Page from '../../components/certifications/Food Safety Management System/Food22000Page';
+import HALALPage from '../../components/certifications/Food Safety Management System/HALALPage';
+import HACCPPage from '../../components/certifications/Food Safety Management System/HACCPPage';
+import ISO1829512017Page from '../../components/certifications/Customer Contact Centers/ISO1829512017Page';
+import BSCIPage from '../../components/certifications/Customer Contact Centers/BSCIPage';
+import OEKOTEXPage from '../../components/certifications/Customer Contact Centers/OEKOTEXPage';
+import SEDEXPage from '../../components/certifications/Customer Contact Centers/SEDEXPage';
 
 const AllRoute = () => {
 
@@ -48,6 +80,24 @@ const AllRoute = () => {
           <Route path="technology-consulting/penetration-testing" element={<PenetrationPage />} />
           <Route path="technology-consulting/identity-access" element={<IdentityPage />} />
           <Route path="technology-consulting/virtual-ciso-services" element={<VirtualCISOPage />} />
+          <Route path="technology-consulting/cio-mentoring" element={<CIOMentoringPage />} />
+          <Route path="technology-consulting/cio-services" element={<CIOServicesPage />} />
+          <Route path="technology-consulting/it-strategy" element={<ITStrategyPage />} />
+          <Route path="technology-consulting/enterprise-architecture" element={<EnterprisePage />} />
+          <Route path="technology-consulting/outsourcing-it-services" element={<OutsourcingITServicesPage />} />
+          <Route path="technology-consulting/managed-services" element={<ManagedServicesPage />} />
+          <Route path="technology-consulting/it-implementation" element={<ITImplementationPage />} />
+          <Route path="technology-consulting/cloud-solutions" element={<CloudSolutionsPage />} />
+          <Route path="technology-consulting/custom-application-development" element={<CustomApplicationDevelopmentPage />} />
+          <Route path="technology-consulting/devops" element={<DevOpsPage />} />
+          <Route path="technology-consulting/software-quality-assurance-testing" element={<SoftwareQualityPage />} />
+          <Route path="technology-consulting/website-development-wordpress" element={<WebsiteDevelopmentPage />} />
+          <Route path="technology-consulting/seo-digital-marketing" element={<DigitalMarketingPage />} />
+          <Route path="technology-consulting/microsoft-adoption" element={<MicrosoftAdoptionPage />} />
+          <Route path="technology-consulting/microsoft-teams" element={<MicrosoftTeamsPage />} />
+          <Route path="technology-consulting/microsoft-365-managed" element={<Microsoft365Page />} />
+          <Route path="technology-consulting/microsoft-365-migration" element={<Microsoft365MigrationPage />} />
+          <Route path="technology-consulting/microsoft-office-365" element={<MicrosoftOfficePage />} />
           <Route path="about-us" element={<AboutUsPage />} />
           <Route path="about-us/partners" element={<PartnersPage />} />
           <Route path="about-us/locations" element={<LocationsPage />} />
@@ -56,7 +106,20 @@ const AllRoute = () => {
           <Route path="industries/retail" element={<RetailPage />} />
           <Route path="industries/manufacturing" element={<ManufacturingPage />} />
           <Route path="certifications/iso-9001" element={<ISO9001Page />} />
+          <Route path="certifications/iso-134852015-md" element={<ISO134852015MDPage />} />
           <Route path="certifications/iso-140012015-ems" element={<EMSPage />} />
+          <Route path="certifications/iso-450012018-ohsms" element={<OHSMSPage />} />
+          <Route path="certifications/iso-201212012" element={<ISO201212012Page />} />
+          <Route path="certifications/iso-260012019" element={<ISO260012019Page />} />
+          <Route path="certifications/iso-500012018" element={<ISO500012018Page />} />
+          <Route path="certifications/iso-220002018-fsms" element={<FSMSPage />} />
+          <Route path="certifications/food-safety-certification-22000" element={<Food22000Page />} />
+          <Route path="certifications/haccp" element={<HACCPPage />} />
+          <Route path="certifications/halal" element={<HALALPage />} />
+          <Route path="certifications/iso-18295-12017" element={<ISO1829512017Page />} />
+          <Route path="certifications/sedex" element={<SEDEXPage />} />
+          <Route path="certifications/bsci" element={<BSCIPage />} />
+          <Route path="certifications/oeko-tex" element={<OEKOTEXPage />} />
           <Route path="tech-platforms/microsoft" element={<MicrosoftPage />} />
           <Route path="tech-platforms/google-cloud" element={<GooglePage />} />
           <Route path="tech-platforms/aws" element={<AWSPage />} />
@@ -73,6 +136,7 @@ const AllRoute = () => {
           <Route path="blog-single/:slug" element={<BlogDetails />} />
           <Route path="contact" element={<ContactPage />} />   */}
           <Route path="contact-us" element={<ContactUsPage />} />  
+          <Route path="*" element={<NotFound />} />  
         </Routes>
       </BrowserRouter>
 

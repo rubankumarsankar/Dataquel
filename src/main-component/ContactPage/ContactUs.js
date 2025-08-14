@@ -2,7 +2,6 @@ import React, { Fragment, useState, useEffect } from "react";
 import PageTitle from "../../components/pagetitle/PageTitle";
 import Scrollbar from "../../components/scrollbar/scrollbar";
 import Footer from "../../components/footer/Footer";
-import Navbar from "../../components/header/navbar";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import "./contact.css";
@@ -10,7 +9,6 @@ import { FiArrowRight } from "react-icons/fi";
 import MainNavbar from "../../components/header/MainHeader";
 
 const ContactUsPage = (props) => {
-  const [isOpen, setOpen] = useState(false);
   const {
     register,
     handleSubmit,
