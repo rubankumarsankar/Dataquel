@@ -64,6 +64,20 @@ import ISO1829512017Page from '../../components/certifications/Customer Contact 
 import BSCIPage from '../../components/certifications/Customer Contact Centers/BSCIPage';
 import OEKOTEXPage from '../../components/certifications/Customer Contact Centers/OEKOTEXPage';
 import SEDEXPage from '../../components/certifications/Customer Contact Centers/SEDEXPage';
+import ISOISMSPage from '../../components/certifications/Information Technology/ISOISMSPage';
+import ISOBCMSPage from '../../components/certifications/Information Technology/ISOBCMSPage';
+import ISOPIMPage from '../../components/certifications/Information Technology/ISOPIMPage';
+import ISOPOPIPage from '../../components/certifications/Information Technology/ISOPOPIPage';
+import ISOISCCSPage from '../../components/certifications/Information Technology/ISOISCCSPage';
+import ISOISCEUIPage from '../../components/certifications/Information Technology/ISOISCEUIPage';
+import ISOITSMSPage from '../../components/certifications/Information Technology/ISOITSMSPage';
+import CSAPage from '../../components/certifications/Information Technology/CSAPage';
+import CMMIPage from '../../components/certifications/Information Technology/CMMIPage';
+import PCIDSSPage from '../../components/certifications/Information Technology/PCIDSSPage';
+import SOCTYPE2Page from '../../components/certifications/Information Technology/SOCTYPE2Page';
+import TISAXPage from '../../components/certifications/Information Technology/TISAXPage';
+import GDPRPage from '../../components/certifications/Information Technology/GDPRPage';
+import HIPPAPage from '../../components/certifications/Information Technology/HIPPAPage';
 
 const AllRoute = () => {
 
@@ -120,6 +134,20 @@ const AllRoute = () => {
           <Route path="certifications/sedex" element={<SEDEXPage />} />
           <Route path="certifications/bsci" element={<BSCIPage />} />
           <Route path="certifications/oeko-tex" element={<OEKOTEXPage />} />
+          <Route path="certifications/iso-270012022-isms" element={<ISOISMSPage />} />
+          <Route path="certifications/iso-223012019-bcms" element={<ISOBCMSPage />} />
+          <Route path="certifications/iso-277012019-pim" element={<ISOPIMPage />} />
+          <Route path="certifications/iso-270182019-popi" element={<ISOPOPIPage />} />
+          <Route path="certifications/iso-270172015-isccs" element={<ISOISCCSPage />} />
+          <Route path="certifications/iso-270192019-isceui" element={<ISOISCEUIPage />} />
+          <Route path="certifications/iso-20000-12018-itsms" element={<ISOITSMSPage />} />
+          <Route path="certifications/cloud-security-alliance-csa" element={<CSAPage />} />
+          <Route path="certifications/cmmi" element={<CMMIPage />} />
+          <Route path="certifications/pci-dss" element={<PCIDSSPage />} />
+          <Route path="certifications/soc-type2" element={<SOCTYPE2Page />} />
+          <Route path="certifications/tisax" element={<TISAXPage />} />
+          <Route path="certifications/gdpr" element={<GDPRPage />} />
+          <Route path="certifications/hippa" element={<HIPPAPage />} />
           <Route path="tech-platforms/microsoft" element={<MicrosoftPage />} />
           <Route path="tech-platforms/google-cloud" element={<GooglePage />} />
           <Route path="tech-platforms/aws" element={<AWSPage />} />

@@ -8,6 +8,8 @@ import icon from "../../images/icons/icon_stars_trustpilot.svg";
 import avatar1 from "../../images/profile/Profile-1.png";
 import avatar2 from "../../images/profile/Profile-2.png";
 import avatar3 from "../../images/profile/Profile-3.png";
+import CountUp from "react-countup";
+// import { useInView } from "react-intersection-observer";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -101,7 +103,19 @@ const Hero = () => {
                 custom={0.8}
               >
                 <div className="worldwide_clients">
-                  <div className="counter_value">150+</div>
+                  <div className="counter_value">
+                    {/*
+        Animate only when in view
+      */}
+                    <CountUp
+                      start={0}
+                      end={150}
+                      duration={2}
+                      suffix="+"
+                      enableScrollSpy
+                      scrollSpyDelay={0}
+                    />
+                  </div>
                   <p>Clients Worldwide</p>
                   <ul className="avatar_group unordered_list">
                     <li>

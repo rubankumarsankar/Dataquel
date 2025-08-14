@@ -5,15 +5,35 @@
   font-size: 14px;
   color: #333;
   border-top: 1px solid #eee;
+  overflow: hidden;
 }
 
+/* Section Titles */
 .footer-title {
   font-weight: 700;
   font-size: 16px;
   color: #f26522;
   margin-bottom: 16px;
+  position: relative;
 }
 
+/* Simple underline animation */
+.footer-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 0;
+  background: #f26522;
+  transition: width 0.3s ease;
+}
+
+.footer-title:hover::after {
+  width: 40%;
+}
+
+/* Links */
 .footer-links {
   list-style: none;
   padding: 0;
@@ -22,6 +42,11 @@
 
 .footer-links li {
   margin-bottom: 10px;
+  transition: transform 0.2s ease;
+}
+
+.footer-links li:hover {
+  transform: translateX(5px);
 }
 
 .footer-links a {
@@ -35,16 +60,7 @@
   text-decoration: underline;
 }
 
-.footer-top address {
-  font-style: normal;
-  margin-bottom: 10px;
-}
-
-.footer-top .label {
-  font-weight: 600;
-  color: #f26522;
-}
-
+/* Subscribe Section */
 .footer-subscribe {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
@@ -94,8 +110,10 @@
 
 .subscribe-btn:hover {
   background-color: #0039a6;
+  transform: scale(1.05);
 }
 
+/* Bottom Footer */
 .footer-bottom {
   padding-top: 20px;
 }
@@ -103,11 +121,6 @@
 .copyright {
   margin: 0;
   color: #555;
-}
-
-.brand {
-  color: #f26522;
-  font-weight: 600;
 }
 
 .footer-social {
@@ -120,11 +133,12 @@
 .footer-social svg {
   cursor: pointer;
   color: #002060;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-social svg:hover {
   color: #f26522;
+  transform: scale(1.2) rotate(5deg);
 }
 
 .follow-text {
@@ -132,10 +146,40 @@
   color: #002060;
 }
 
-.divider {
+.footer-line {
   width: 30px;
   height: 2px;
   background-color: #f26522;
   display: inline-block;
   margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .footer-top {
+    text-align: center;
+  }
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 0 10px;
+  }
+  .footer-subscribe {
+    text-align: center;
+  }
+  .subscribe-form {
+    flex-direction: column;
+  }
+  .subscribe-btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .footer-social {
+    justify-content: center;
+    margin-top: 10px;
+  }
 }

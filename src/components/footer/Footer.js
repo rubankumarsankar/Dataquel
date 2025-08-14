@@ -1,5 +1,5 @@
-import React from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import React, { useEffect } from "react";
+import { Container, Row, Col, Form } from "react-bootstrap";
 import {
   FaFacebookF,
   FaTumblr,
@@ -7,14 +7,24 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import "./Footer.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Footer() {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
   return (
     <footer className="footer">
       <Container>
         {/* Top Footer */}
-        <Row className="footer-top py-5">
-          <Col md={3}>
+        <Row
+          className="footer-top py-5"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          {/* Row 1: Get in Touch (full width on mobile) */}
+          <Col xs={12} md={3}>
             <h5 className="footer-title">Get In Touch</h5>
             <address>
               2030 Main St,
@@ -32,7 +42,8 @@ export default function Footer() {
             </p>
           </Col>
 
-          <Col md={2}>
+          {/* Row 2: Company & Expertise */}
+          <Col xs={6} md={2}>
             <h5 className="footer-title">Company</h5>
             <ul className="footer-links">
               <li>
@@ -53,7 +64,7 @@ export default function Footer() {
             </ul>
           </Col>
 
-          <Col md={3}>
+          <Col xs={6} md={3}>
             <h5 className="footer-title">Expertise</h5>
             <ul className="footer-links">
               <li>
@@ -74,7 +85,8 @@ export default function Footer() {
             </ul>
           </Col>
 
-          <Col md={2}>
+          {/* Row 3: Industries & Legal */}
+          <Col xs={6} md={2}>
             <h5 className="footer-title">Industries</h5>
             <ul className="footer-links">
               <li>
@@ -95,7 +107,7 @@ export default function Footer() {
             </ul>
           </Col>
 
-          <Col md={2}>
+          <Col xs={6} md={2}>
             <h5 className="footer-title">Legal</h5>
             <ul className="footer-links">
               <li>
@@ -120,7 +132,11 @@ export default function Footer() {
         {/* <hr /> */}
 
         {/* Subscribe Section */}
-        <Row className="footer-subscribe py-4 align-items-center">
+        <Row
+          className="footer-subscribe py-4 align-items-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <Col md={6}>
             <h6 className="subscribe-title">
               Subscribe to The Official DataQuel Blog
@@ -146,7 +162,11 @@ export default function Footer() {
         {/* <hr /> */}
 
         {/* Bottom Footer */}
-        <Row className="footer-bottom py-3">
+        <Row
+          className="footer-bottom py-3"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <Col md={6}>
             <p className="copyright">
               Copyright © <span className="text-orange">DataQuel</span> 2025,
@@ -157,10 +177,42 @@ export default function Footer() {
             <div className="footer-social">
               <span className="follow-text">Follow Us</span>
               <span className="footer-line"></span>
-              <FaFacebookF />
-              <FaTumblr />
-              <FaLinkedinIn />
-              <FaInstagram />
+
+              <a
+                href="https://www.facebook.com/YourPage"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <FaFacebookF />
+              </a>
+
+              <a
+                href="https://www.tumblr.com/YourPage"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Tumblr"
+              >
+                <FaTumblr />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/company/YourPage"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedinIn />
+              </a>
+
+              <a
+                href="https://www.instagram.com/YourPage"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <FaInstagram />
+              </a>
             </div>
           </Col>
         </Row>
